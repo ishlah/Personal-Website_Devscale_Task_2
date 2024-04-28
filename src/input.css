@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply font-sans
+    }
+    a{
+        @apply text-orange-50 px-2 rounded-3xl hover:text-orange-500 hover:scale-110 transition-all duration-500 max-sm:text-xs
+    }
+    p{
+        @apply text-justify
+    }
+    button{
+        @apply bg-orange-500 px-2 py-1 rounded-md text-white shadow-2xl border border-slate-500 flex items-center gap-2 content-center
+    }
+    li{
+        @apply pb-6
+    }
+}
+
+@layer components{
+    .bgBlack{
+        @apply bg-black rounded-b-2xl
+    }
+    .bgWhite{
+        @apply bg-white rounded-b-2xl
+    }
+    .gradient{
+        @apply bg-gradient-to-r from-blue-700 to-green-400 bg-clip-text text-transparent
+    }
+}
